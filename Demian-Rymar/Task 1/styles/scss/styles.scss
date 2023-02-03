@@ -1,0 +1,127 @@
+@import "../variables/variables.scss";
+
+body{
+    background-color: $body-background-color;
+}
+
+.block-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-line {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-card-350x150-title {
+    background-color: $card-background-color;
+    height: 350px;
+    width: 350px;
+
+    h1 {
+        font-size: large;
+        margin-left: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}
+
+.news-card-350x100 {
+    background-color: $card-background-color;
+    height: 320px;
+    width: 350px;
+
+    p {
+        margin-left: 10px;
+    }
+}
+
+.news-card-350x100-longer-title {
+    background-color: $card-background-color;
+    height: 340px;
+    width: 350px;
+    margin-bottom: 10px;
+    
+    h1 {
+        font-size: large;
+        margin-left: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}
+
+.news-card-350x220 {
+    background-color: $card-background-color;
+    height: 330px;
+    width: 350px;
+
+    p {
+        margin-left: 10px;
+    }
+}
+
+.news-card-350x230 {
+    background-color: $card-background-color;
+    height: 370px;
+    width: 350px;
+    
+    h1 {
+        font-size: large;
+        margin-left: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}
+
+.news-card-350x350 {
+    background-color: $card-background-color;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 350px;
+    
+    h1 {
+        font-size: large;
+        margin-left: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}
+
+.news-card-350x100-title {
+    background-color: $card-background-color;
+    height: 350px;
+    width: 350px;
+
+    h1 {
+        font-size: large;
+        margin-left: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}
+
+.news-card-350x150 {
+    background-color: $card-background-color;
+    height: 370px;
+    width: 350px;
+
+
+    p {
+        margin-left: 10px;
+    }
+}

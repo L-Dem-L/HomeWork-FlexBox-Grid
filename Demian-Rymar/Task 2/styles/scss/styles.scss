@@ -1,0 +1,118 @@
+@import "../variables/variables.scss";
+
+body {
+    background-color: $body-background-color;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.childe {
+    height: 80px;
+
+    .msg {
+        margin-left: 5%;
+    }
+}
+
+.childe:nth-child(7) {
+    grid-area: 1 / 2 / 2 / 4; 
+    background-color: $Anie-msg-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.childe:nth-child(8) {
+    grid-area: 2 / 2 / 3 / 4;
+    background-color: $Jack-msg-color;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.childe:nth-child(9) {
+    grid-area: 3 / 2 / 4 / 4;
+    background-color: $Anie-msg-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.childe:nth-child(10) {
+    grid-area: 4 / 2 / 5 / 4;
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.childe:nth-child(11) {
+    grid-area: 5 / 2 / 6 / 4;
+    background-color: $Anie-msg-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.childe:nth-child(12) {
+    grid-area: 6 / 2 / 7 / 4;
+    background-color: $Jack-msg-color;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.user-info-Ania {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%; 
+
+    .user-img {
+        height: 64px;
+    }
+}
+// .user-img {
+//         height: 64px;
+//     }
+
+.user-info-Jack {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%; 
+}
+
+.Anie-info {
+    display: flex;
+    flex-direction: column;
+
+    h4{
+        margin: 0;
+    }
+
+    h5{
+        margin: 0;
+    }
+}
+
+.Jack-info {
+    display: flex;
+    flex-direction: column;
+
+    h4{
+        margin: 0;
+    }
+
+    h5{
+        margin: 0;
+    }
+}

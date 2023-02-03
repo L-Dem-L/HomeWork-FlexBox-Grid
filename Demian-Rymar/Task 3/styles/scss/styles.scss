@@ -1,0 +1,125 @@
+@import "../variables/variables.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $body-background-color;
+}
+
+body::-webkit-scrollbar {
+    height: 8px;       
+}
+
+body::-webkit-scrollbar-track {
+    background: $webkit-scrollbar-track-color;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $webkit-scrollbar-thumb-color;
+    border-radius: 10px;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: $header-color;
+    width: 100%;
+    height: 100px;
+    padding-right: 200px;
+
+    h1 {
+        margin-left: 5%;
+        color: $header-text-color;
+        height: 35px;
+    }
+
+    .header-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+.boards {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    gap: 20px;
+    margin-top: 110px;
+
+.board {
+    display: flex;
+
+    .todo-list {
+        display: flex;
+        flex-direction: column;
+        background-color: $todo-list-color;
+        height: 450px;
+        width: 400px;
+        gap: 20px;
+        overflow-y: auto;
+        }
+
+        .todo-list::-webkit-scrollbar {
+            width: 10px;       
+        }
+            
+        .todo-list::-webkit-scrollbar-track {
+            background: lightgray;
+        }
+            
+        .todo-list::-webkit-scrollbar-thumb {
+            background-color: gray;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-left: 5%;
+            margin-bottom: 0;
+        }
+
+        .task {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: $task-color;
+            height: 20%;
+            width: 90%;
+            margin-left: 5%;
+
+            p {
+                margin-left: 5%;
+                margin-bottom: 10px;
+            }
+
+            .social {
+                margin-left: 5%;
+                display: flex;
+                gap: 15px;
+                width: 90%;
+
+                .avatar {
+                    width: 26px;
+                    height: 26px;
+                    margin-left: 15%;
+                }
+
+                h4 {
+                    margin: 0;
+                    height: 20px;
+                }
+
+                img {
+                    width: 24.99px;
+                    height: 24.99px;
+                }
+            }
+        }
+    }
+}

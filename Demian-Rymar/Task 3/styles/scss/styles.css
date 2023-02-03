@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: darkslategray;
+}
+
+body::-webkit-scrollbar {
+  height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: darkolivegreen;
+  width: 100%;
+  height: 100px;
+  padding-right: 200px;
+}
+header h1 {
+  margin-left: 5%;
+  color: aliceblue;
+  height: 35px;
+}
+header .header-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.boards {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  gap: 20px;
+  margin-top: 110px;
+}
+.boards .board {
+  display: flex;
+}
+.boards .board .todo-list {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  height: 450px;
+  width: 400px;
+  gap: 20px;
+  overflow-y: auto;
+}
+.boards .board .todo-list::-webkit-scrollbar {
+  width: 10px;
+}
+.boards .board .todo-list::-webkit-scrollbar-track {
+  background: lightgray;
+}
+.boards .board .todo-list::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+}
+.boards .board h1 {
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+.boards .board .task {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: gray;
+  height: 20%;
+  width: 90%;
+  margin-left: 5%;
+}
+.boards .board .task p {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.boards .board .task .social {
+  margin-left: 5%;
+  display: flex;
+  gap: 15px;
+  width: 90%;
+}
+.boards .board .task .social .avatar {
+  width: 26px;
+  height: 26px;
+  margin-left: 15%;
+}
+.boards .board .task .social h4 {
+  margin: 0;
+  height: 20px;
+}
+.boards .board .task .social img {
+  width: 24.99px;
+  height: 24.99px;
+}/*# sourceMappingURL=styles.css.map */
